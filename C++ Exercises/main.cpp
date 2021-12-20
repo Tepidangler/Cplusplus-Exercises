@@ -2,10 +2,13 @@
 #include <math.h>
 #include <regex> // std::regex_match()
 #include "Exercise3.h"
+#include "Exercise5.h"
 
 float x = NAN;
 float y = NAN;
 bool bExercise2Done = false;
+bool bExercise3Done = false;
+bool bExercise5Done = false;
 
 int main()
 {
@@ -56,10 +59,21 @@ int main()
 	if (bExercise2Done == true)
 	{
 		PrintSizeOf();
+		bExercise3Done = true;
 	}
 	else
 	{
 		std::cout << "IDK how, but we managed to skip over the second/fourth exercise. So try again I guess and go look at the code";
+	}
+
+	if (bExercise3Done == true)
+	{
+		PrintUpperLowerLimits();
+		bExercise5Done = true;
+	}
+	else
+	{
+		std::cout << "IDK how, but we managed to skip over the third exercise. So try again I guess and go look at the code";
 	}
 
 	return 0;
