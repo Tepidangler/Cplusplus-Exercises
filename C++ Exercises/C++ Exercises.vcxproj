@@ -142,6 +142,7 @@
     <ClInclude Include="Exercise2.h" />
     <ClInclude Include="Exercise3.h" />
     <ClInclude Include="Exercise5.h" />
+    <ClInclude Include="Exercise6.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

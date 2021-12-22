@@ -3,13 +3,26 @@
 #include <regex> // std::regex_match()
 #include "Exercise3.h"
 #include "Exercise5.h"
+#include "Exercise6.h"
 
 float x = NAN;
 float y = NAN;
 bool bExercise2Done = false;
 bool bExercise3Done = false;
 bool bExercise5Done = false;
+bool bExercise6Done = false;
 
+//A SET OF VARIABLES FOR EXERCISE 6
+const char Gender = 'F';
+int IsMarried = 1;
+int NumberOfSons = 2;
+int StartYear = 2009;
+int Salary = 1500000;
+double Height = 79.48;
+double GPA = 4.69;
+int TotalComp = 12047235;
+int Balance = 995324987;
+//END OF VARIABLES FOR EXERCISE 6
 int main()
 {
 	const char* newline = "\n";
@@ -66,6 +79,8 @@ int main()
 		std::cout << "IDK how, but we managed to skip over the second/fourth exercise. So try again I guess and go look at the code";
 	}
 
+	/*This code implements Exercise 5*/
+
 	if (bExercise3Done == true)
 	{
 		PrintUpperLowerLimits();
@@ -75,6 +90,50 @@ int main()
 	{
 		std::cout << "IDK how, but we managed to skip over the third exercise. So try again I guess and go look at the code";
 	}
+
+	/*This code implements Exercise 6*/
+
+	if (bExercise5Done == true)
+	{
+		if (CheckIfCharOverLimits(Gender) == false)
+		{
+			printf("\n\nThe Gender is : %c\n", Gender);
+		}
+		if (CheckIfIntOverLimits(IsMarried) == false)
+		{
+			printf("Is She Married? %d\n", IsMarried);
+		}
+		if (CheckIfIntOverLimits(NumberOfSons) == false)
+		{
+			printf("Number of sons she has: %d\n", NumberOfSons);
+		}
+		if (CheckIfIntOverLimits(StartYear) == false)
+		{
+			printf("Year of her appointment: %d\n", StartYear);
+		}
+		if (CheckIfIntOverLimits(Salary) == false)
+		{
+			printf("Salary for a year: %d\n", Salary);
+		}
+		if (CheckIfDoubleOverLimits(Height) == false)
+		{
+			printf("Height is: %.2f\n", Height);
+		}
+		if (CheckIfDoubleOverLimits(GPA) == false)
+		{
+			printf("GPA is: %.2f\n", GPA);
+		}
+		if (CheckIfIntOverLimits(TotalComp) == false)
+		{
+			printf("Salary Drawn up to: %d\n", TotalComp);
+		}
+		if (CheckIfIntOverLimits(Balance) == false)
+		{
+			printf("Balance till: %d\n", Balance);
+			bExercise6Done = true;
+		}
+	}
+
 
 	return 0;
 }

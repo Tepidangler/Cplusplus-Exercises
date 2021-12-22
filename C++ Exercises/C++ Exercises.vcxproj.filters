@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exercise5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Exercise2.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Exercise3.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Exercise5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
