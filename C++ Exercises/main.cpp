@@ -11,6 +11,8 @@ bool bExercise2Done = false;
 bool bExercise3Done = false;
 bool bExercise5Done = false;
 bool bExercise6Done = false;
+bool bExercise7Done = false;
+bool bExercise8Done = false;
 
 //A SET OF VARIABLES FOR EXERCISE 6
 const char Gender = 'F';
@@ -134,6 +136,35 @@ int main()
 		}
 	}
 
+	if (bExercise6Done == true)
+	{
+		printf("\n5 + 7 = %d\n", (5 + 7));
+		printf("3.7 + 8.0 = %.1f\n", (3.7 + 8.0));
+		printf("5 + 8.0 = %.1f\n", (5 + 8.0));
+		printf("5 - 7 = %d\n", (5 - 7));
+		printf("3.7 - 8.0 = %.1f\n", (3.7 - 8.0));
+		printf("5 - 8.0 = %.1f\n", (5 - 8.0));
+		printf("5 * 7 = %d\n", (5 * 7));
+		printf("3.7 * 8.0 = %.1f\n", (3.7 * 8.0));
+		printf("5 * 8.0 = %.1f\n", (5 * 8.0));
+		printf("5 / 7 = %d\n", (5 / 7));
+		printf("3.7 / 8.0 = %.1f\n", (3.7 / 8.0));
+		printf("5 / 8.0 = %.1f\n", (5 / 8.0));
+		bExercise7Done = true;
+	}
+	if (bExercise7Done == true)
+	{
+		printf("\nCheck overflow / underflow during various arithmetical operation :\n");
+		printf("Range of int is [%d, %d]\n", INT_MIN, INT_MAX);
+		printf("-------------------------------------------------------------------- -\n");
+		printf("Overflow the integer range and set in minimum range : %d\n", (INT_MIN ));
+		printf("Increasing from its minimum range : %d\n", (INT_MIN + 1));
+		printf("Product is : %d\n", ((unsigned)INT_MAX* (unsigned)INT_MAX));
+		printf("Underflow the range and set in maximum range : %d\n", (INT_MAX ));
+		printf("Decreasing from its maximum range : %d\n", (INT_MAX - 1));
+		printf("Product is : %d\n", ((unsigned)INT_MIN* (unsigned)INT_MIN));
+		bExercise8Done = true;
+	}
 
 	return 0;
 }
